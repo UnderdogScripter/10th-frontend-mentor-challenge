@@ -40,8 +40,10 @@ p {
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 0;
+  position: absolute;
 }
 
 /** Medium devices (tablets, 768px and up) **/
@@ -145,7 +147,7 @@ main {
   position: relative;
 }
 
-.range > p:first-child {
+.range > p:first-of-type {
   color: hsl(243, 100%, 93%);
   text-align: center;
   font-size: calc(10em / 14);
@@ -163,7 +165,7 @@ main {
     padding: 4%;
   }
 
-  .range > p:first-child {
+  .range > p:first-of-type {
     text-align: left;
   }
 }
@@ -176,7 +178,7 @@ main {
   height: 18.5%;
 }
 
-.bar div:first-child {
+.bar div:first-of-type {
   border-radius: 5% / 90%;
   height: 100%;
   background: hsl(229, 57%, 11%);
@@ -185,7 +187,7 @@ main {
   align-items: center;
 }
 
-.bar div:first-child::before {
+.bar div:first-of-type::before {
   content: "";
   width: 73.2%;
   height: 71.5%;
@@ -195,7 +197,7 @@ main {
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
 
-.bar div:first-child::after {
+.bar div:first-of-type::after {
   content: "";
   background: white;
   border-radius: 50%;
@@ -218,15 +220,15 @@ main {
     height: 22.5%;
   }
 
-  .bar div:first-child {
+  .bar div:first-of-type {
     border-radius: 3% / 90%;
   }
 
-  .bar div:first-child::before {
+  .bar div:first-of-type::before {
     left: 0.6%;
   }
 
-  .bar div:first-child::after {
+  .bar div:first-of-type::after {
     left: 71.3%;
     width: 2.2%;
     height: 55.5%;
